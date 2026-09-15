@@ -6,12 +6,150 @@
   box-sizing: border-box;
 }
 
+.about,
+.projects {
+    scroll-margin-top: 12vmin;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("Images/Nature.png");
+    background-size:cover;
+
+    padding-bottom: 2vmin;
+
+    font-family: 'Inter', sans-serif;
+    color: #f9f9fb;
+}
+
+
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     width: 100%;
+    height: 10vmin;
 
-    background-color: #000;
+    padding: 0 2vmin;
+
+    background: linear-gradient(90deg, rgba(26, 72, 80, 0.88), rgba(38, 108, 90, 0.80));
+    backdrop-filter: blur(1.5vmin);
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.18);
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vmin;
+
+    height: 100%;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4vmin;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vmin;
+
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vmin;
+
+    height: 100%;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10vmin;
+    height: 80%;
+    border-radius: 1.5vmin;
+
+    margin: 10vmin 0;
+
+    background: rgba(5, 20, 16, 0.3);
+    backdrop-filter: blur(1.5vmin);
+
+    text-decoration: none;
+    font-size: 1.5vmin;
+    font-weight: 600;
+    color: #f9f9fb;
+    transition: ease 0.1s;
+}
+
+.content {
+    margin-top: 12vmin;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 2vmin;
+    margin: 2vmin;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.95);
+    border-radius: 2vmin;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4vmin;
+}
+
+.section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2vmin;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 2vmin;
+    margin: 2vmin 2vmin 0 2vmin;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.95);
+    border-radius: 2vmin;
 }
