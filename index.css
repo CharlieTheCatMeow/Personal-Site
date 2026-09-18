@@ -101,6 +101,14 @@ body {
     transition: ease 0.1s;
 }
 
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.nav-link:active {
+    transform: scale(0.9);
+}
+
 .content {
     margin-top: 12vmin;
 }
@@ -187,7 +195,11 @@ body {
 }
 
 .welcome_window_profile_connection_link:hover {
-    scale: 1.4;
+    transform: scale(1.3);
+}
+
+.welcome_window_profile_connection_link:active {
+    transform: scale(1.2);
 }
 
 .welcome_window_profile_connection {
@@ -274,6 +286,16 @@ body {
     font-size: 2vmin;
     text-decoration: none;
     color: #f9f9fb;
+
+    transition: ease 0.1s;
+}
+
+.project-link:hover {
+    transform: scale(1.2);
+}
+
+.project-link:active {
+    transform: scale(0.95);
 }
 
 .image-gallery {
@@ -299,6 +321,12 @@ body {
     border: 0.0625rem solid rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.95);
     border-radius: 2vmin;
+
+    transition: ease 0.1s;
+}
+
+.image-gallery-item:hover {
+    transform: scale(1.18);
 }
 
 .gallery-image {
